@@ -7,13 +7,17 @@ Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFile
 Enable-RemoteDesktop
 Disable-InternetExplorerESC
 Disable-UAC
+Set-TaskbarSmall
 
 
-
-choco install Firefox
-choco install git
-choco install vim
-choco install notepadplusplus
-choco install babun
-choco install visualstudiocode
-choco install javaruntime
+choco install -y Firefox
+choco install -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTerminal'"
+choco install -y vim
+choco install -y notepadplusplus
+choco install -y visualstudiocode
+choco install -y javaruntime
+choco install -y googlechrome
+choco install -y hyper
+choco install -y teamviewer
+choco install -y zoom
+choco install -y veracrypt
